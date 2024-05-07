@@ -3,6 +3,8 @@ import os
 from dotenv import load_dotenv
 from discord import Intents, Client, Message
 from responses import get_response
+from transformers import pipeline
+import re
 
 load_dotenv()
 TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
